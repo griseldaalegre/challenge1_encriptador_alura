@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Encriptar</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="contenedor-logo">
+            <header>
+                <img class="logo" src="imagenes/logo.png" alt="Este es el logo">
+            </header>
+        </div>
+        <div class="contenedor-encriptador">
+           
+
+         <div class="contenedor-input-texto">
+            <textarea class="input-texto" col="40" row="6"  placeholder="Ingrese el texto aquí"></textarea>
+
+         </div>
+               
+                    <div class="botones">
+                        <img class="icon" src="imagenes/icon.png" alt="Esto es una imagen">
+                        <p class="info"><span class="alert"></span> Solo etras minúsculas y sin acentos</p> 
+                        <button class="boton encriptar" onclick="btnEncriptar()">Encriptar</button>
+                        <button class="boton desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    </div>
+
+ 
+                    
+
+        </div>
+        <div class="contenedor-desencriptador">
+            <div  id="imagenEspera" class="imagen-de-espera">
+                <div >
+                    <img  src="imagenes/Muneco.png" />
+                    <p>Ningún mensaje fue encontrado</p>
+                    <p class="subtitle">Ingrese el texto que desees encriptar o desencriptar.</p>
+                </div>
+               
+            </div>
+            <div id="mensajeEncptadoContenedor" class="mensaje-encriptado-contenedor">
+                <textarea class="mensaje" col="18" row="8" placeholder="aqui aparecera el resultado"></textarea>
+                <div class="botones">
+                    <button class="boton desencriptar" onclick="copiar()">Copiar</button>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>
